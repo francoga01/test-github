@@ -11,6 +11,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: echo "resultado ${{ inputs.status }} desde una acción composite"
-           echo "Hoy es ${{ inputs.dia }} desde una acción composite"
+    - run: |
+        echo "resultado ${{ inputs.status }} desde una acción composite"
+        echo "Hoy es ${{ inputs.dia }} desde una acción composite"
     
