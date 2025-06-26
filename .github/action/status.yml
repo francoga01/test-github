@@ -1,0 +1,11 @@
+name: "resultado"
+description: "Muestra un resultado"
+inputs:
+  nombre:
+    required: true
+    description: "status de la prueba"
+
+runs:
+  using: "composite"
+  steps:
+    - run: echo "resultado ${{ inputs.nombre }} desde una acción composite"
