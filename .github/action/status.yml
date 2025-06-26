@@ -1,7 +1,7 @@
 name: "resultado"
 description: "Muestra un resultado"
 inputs:
-  nombre:
+  status:
     required: true
     description: "status de la prueba"
 
