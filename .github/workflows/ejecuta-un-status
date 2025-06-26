@@ -1,0 +1,9 @@
+on: workflow_dispatch
+
+jobs:
+  ejemplo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/actions
+        with:
+          nombre: online
