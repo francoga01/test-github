@@ -1,11 +1,17 @@
 on: 
    workflow_dispatch:
 
+
+
 jobs:
   ejemplo:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/action
-        with:
-          status: online
-          dia: jueves
+     - name: Checkout del código
+       uses: actions/checkout@v3
+        
+     - name: llamar a la accion
+       uses: ./.github/action
+       with:
+         status: online
+         dia: jueves
