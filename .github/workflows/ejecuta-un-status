@@ -7,4 +7,4 @@ jobs:
       - uses: ./.github/actions
         with:
           status: online
-          dia: jueves
+             dia: jueves
