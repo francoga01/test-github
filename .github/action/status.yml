@@ -8,4 +8,4 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: echo "resultado ${{ inputs.nombre }} desde una acción composite"
+    - run: echo "resultado ${{ inputs.status }} desde una acción composite"
