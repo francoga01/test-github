@@ -4,8 +4,13 @@ inputs:
   status:
     required: true
     description: "status de la prueba"
+  dia:
+    required: true
+    description: "dia de hoy"
 
 runs:
   using: "composite"
   steps:
     - run: echo "resultado ${{ inputs.status }} desde una acción composite"
+           echo "Hoy es ${{ inputs.dia }}"
+    
