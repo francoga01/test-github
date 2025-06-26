@@ -4,7 +4,7 @@ jobs:
   ejemplo:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/actions
+      - uses: ./.github/action
         with:
           status: online
           dia: jueves
